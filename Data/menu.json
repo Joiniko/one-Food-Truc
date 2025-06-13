@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Pizza Margherita",
+    "price": 10,
+    "image": "assets/pizza.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Pizza Pepperoni",
+    "price": 12,
+    "image": "assets/pizza1.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Pizza Végétarienne",
+    "price": 11,
+    "image": "assets/pizza2.jpeg"
+  }
+]

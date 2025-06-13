@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f9fbfd;
+  color: #1c1c1c;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #005f73;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #0a9396;
+  margin-bottom: 20px;
+}
+
+section {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  margin: 0 auto 50px auto;
+  max-width: 1200px;
+}
+
+#menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+#menu-items div {
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #ddeeff;
+}
+
+#menu-items div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+
+#menu-items img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #94d2bd;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #68bfa6;
+}
+
+#panier div {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#cart-items {
+  margin-bottom: 20px;
+}
+
+#panier button {
+  margin-left: 8px;
+  background-color: #577590;
+}
+
+#panier button:hover {
+  background-color: #495867;
+}
+
+#btn-commander {
+  background-color: #ee9b00;
+  width: 100%;
+  padding: 16px;
+  font-size: 1.2rem;
+  margin-top: 25px;
+  border-radius: 12px;
+}
+
+#btn-commander:hover {
+  background-color: #ca8602;
+}
+
+#recapitulatif {
+  background-color: #fff7e6;
+  border-left: 6px solid #f4a261;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+#recapitulatif p {
+  margin-bottom: 12px;
+}
+
+#recapitulatif button {
+  margin-top: 20px;
+  margin-right: 12px;
+}
+
+#recapitulatif button:first-child {
+  background-color: #38b000;
+}
+
+#recapitulatif button:last-child {
+  background-color: #e63946;
+}
+
+#recapitulatif button:hover:first-child {
+  background-color: #2d9100;
+}
+
+#recapitulatif button:hover:last-child {
+  background-color: #d62828;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  #btn-commander {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  #menu-items {
+    grid-template-columns: 1fr;
+  }
+}
+
+.toaster {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #005f73;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 10px;
+  z-index: 1000;
+  opacity: 0.95;
+  font-weight: bold;
+}
+
+/* Historique des commandes */
+#liste-historique {
+  margin-top: 35px;
+}
+
+#liste-historique .commande {
+  background-color: #f1f6f9;
+  border-left: 6px solid #0096c7;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+#liste-historique .commande:hover {
+  transform: scale(1.01);
+}
+
+#liste-historique .commande strong {
+  font-size: 1.1rem;
+  color: #1c1c1c;
+}
+
+#liste-historique .commande br + * {
+  margin-left: 8px;
+  display: block;
+  color: #444;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#liste-historique .commande strong:last-child {
+  display: block;
+  margin-top: 12px;
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+}
